@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { Redirect } from 'react-router-dom';
-import classes from './Signin.module.css';
+import classes from './Signin.module.scss';
 import { connect } from "react-redux";
 // import Spinner from '../../UI/Spinner/Spinner';
 import Login from '../../UI/Login/Login';
