@@ -6,9 +6,17 @@
   font-family: 'Inter', sans-serif;
 }
 
+p {
+    margin-bottom: unset;
+}
+
 body {
   font-size: 3rem;
   background: #E5E5E5;
+}
+
+ul {
+    padding-left: unset;
 }
 
 /*************** dashboard *****************/

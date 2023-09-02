@@ -17,12 +17,12 @@ class patientsForms extends Component {
         phoneNumber: '',
         submitted: false,
         loggedIn: false,
-        runComponentDidUpdateOnce: true
+        id: ''
     }
 
     componentDidUpdate() {
-        if (this.props.id && this.state.runComponentDidUpdateOnce) {
-            this.setState({ runComponentDidUpdateOnce: false });
+        if (this.props.id !== this.state.id ) {
+            this.setState({ id: this.props.id });
             axios.get(`/patients/${this.props.id}`)
                 .then((response) => {
                 this.setState({
